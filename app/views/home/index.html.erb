@@ -1,13 +1,52 @@
-<div class="row">
-  <div class="home-hero large-12 columns">
+<section class="home-hero">
+  <div class="home-hero-container large-12">
     <div class="home-hero-content row">
-      <div class="large-8 large-offset-1 columns">
-        <div class="callout-panel">
+      <div class="large-8 columns large-offset-1">
+        <div class="callout_panel">
           <h2><%= t('.callout.title') %></h2>
           <p><%= t('.callout.content') %></p>
-          <a href="#" class="button"><%= t('.callout.call_to_action') %></a>
+          <a href="#" class="call_to_action"><%= t('.callout.call_to_action') %></a>
         </div>
       </div> 
     </div>
   </div>
-</div>
+</section>
+
+<section class="home-programs">
+  <div class="home-programs-overview">
+    <h2><%= t(".programs.overview.title") %> </h2>
+    <p><%= t(".programs.overview.content")%> </p>
+  </div>
+  <div class="home-programs-explanations">
+    <ul>
+      <li>
+        <div class="home-programs-explanations-image">
+          <%= image_tag("programs-web.png") %>
+        </div>
+        <div class="home-programs-explanations-content">
+          <h6><%= t(".programs.explanations.development.title") %></h6>
+          <p><%= t(".programs.explanations.development.content") %></p>
+        </div>
+      </li>
+      <li>
+        <div class="home-programs-explanations-image">
+          <%= image_tag("programs-design.png") %>
+        </div>
+        <div class="home-programs-explanations-content">
+          <h6><%= t(".programs.explanations.design.title") %></h6>
+          <p><%= t(".programs.explanations.design.content") %></p>
+        </div>
+      </li>
+      <li>
+        <div class="home-programs-explanations-image">
+          <%= image_tag("programs-entrepreneurship.png") %>
+        </div>
+        <div class="home-programs-explanations-content">
+          <h6><%= t(".programs.explanations.entrepreneurship.title") %></h6>
+          <p><%= t(".programs.explanations.entrepreneurship.content") %></p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+

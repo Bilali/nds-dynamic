@@ -1,4 +1,43 @@
 .home-hero
+  @extend .row
+
+.home-programs
+  @extend .row
+  background-color: #FF4454
+  padding: 40px
+  p, h2, h6
+    color: #fff
+
+.home-programs-overview
+  @extend .large-7
+  @extend .columns
+
+.home-programs-explanations
+  @extend .large-5
+  @extend .columns
+
+  ul > li
+    @extend .row
+
+    list-style: none
+    border-top: solid 1px white 
+    padding-top: 10px
+
+    &:first-of-type
+      border: none
+
+    .home-programs-explanations-image
+      @extend .large-4
+      @extend .small-4
+      @extend .columns
+    .home-programs-explanations-content
+      @extend .large-8 
+      @extend .small-8
+      @extend .columns
+      h6
+        margin-top: 0
+
+.home-hero-container
   display: table
   height: 500px
   overflow: hidden
