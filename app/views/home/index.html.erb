@@ -12,7 +12,7 @@
   </div>
 </section>
 
-<section class="home-programs">
+<section class="content home-programs">
   <div class="home-programs-overview">
     <h2><%= t(".programs.overview.title") %> </h2>
     <p><%= t(".programs.overview.content")%> </p>
@@ -50,3 +50,33 @@
   </div>
 </section>
 
+<section class="content home-get_involved">
+  <div class="row">
+    <div class="home-get_involved-title">
+      <h2><%= t(".programs.get_involved.title") %></h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="home-get_involved-ways">
+      <img src="http://lorempixel.com/300/100/">
+      <h4><%= t(".programs.get_involved.sponsor.title") %></h3>
+      <p><%= t(".programs.get_involved.sponsor.content") %></p>
+    </div>
+
+    <div class="home-get_involved-ways">
+      <img src="http://lorempixel.com/300/100/">
+      <h4><%= t(".programs.get_involved.mentor.title") %></h3>
+      <p><%= t(".programs.get_involved.mentor.content") %></p>
+    </div>
+
+    <div class="home-get_involved-ways panel">
+      <h4><%= t(".programs.get_involved.join_us.title") %></h4>
+      <form>
+        <input type=text placeholder="Your name"/>
+        <input type=text placeholder="Your name"/>
+        <button type=submit><%= t(".programs.get_involved.join_us.button") %>
+      </form>
+    </div>
+  </div>
+</section>

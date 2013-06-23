@@ -1,10 +1,23 @@
 .home-hero
   @extend .row
 
+.home-hero-container
+  display: table
+  height: 500px
+  overflow: hidden
+  background: url("http://lorempixel.com/1280/500/abstract/")
+
+  .home-hero-content
+    display: table-cell
+    vertical-align: middle
+
+    h1
+      text-transform: uppercase
+
+
 .home-programs
   @extend .row
   background-color: #FF4454
-  padding: 40px
   p, h2, h6
     color: #fff
 
@@ -37,16 +50,21 @@
       h6
         margin-top: 0
 
-.home-hero-container
-  display: table
-  height: 500px
-  overflow: hidden
-  background: url("http://lorempixel.com/1280/500/abstract/")
+.home-get_involved
+  @extend .row
+.home-get_involved-title
+  @extend .large-12
+  h2
+    width: 100%
+    text-align: center
 
-  .home-hero-content
-    display: table-cell
-    vertical-align: middle
+.home-get_involved-ways
+  @extend .large-4
+  @extend .columns
+  h4
+    @extend .subheader
+    text-align: center
 
-    h1
-      text-transform: uppercase
-
+  button
+    @extend .button
+    @extend .expand
