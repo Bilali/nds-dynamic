@@ -6,11 +6,17 @@ class TestController < ApplicationController
   end
 end
 
-NairobiDevSchool::Application.routes.draw do
-  get 'some_route' => "test#some_route"
-end
-
 describe TestController do
+  before :each do
+    Rails.application.routes.draw do
+      get 'some_route' => "test#some_route"
+    end
+  end
+
+  after :each do
+    Rails.application.reload_routes!
+  end
+
   describe "authentication" do
     before :each do
       @old_env = Rails.env
