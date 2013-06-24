@@ -4,7 +4,7 @@ class WaitingListApplicationsController < ApplicationController
 
     if @waiting_list_application.save
       flash[:success] = I18n.t("waiting_list_applications.create.success")
-      redirect_to :back
+      redirect_to root_path
     else
       flash[:error] = I18n.t("waiting_list_applications.create.failure")
       render :new

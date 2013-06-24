@@ -11,10 +11,6 @@ describe WaitingListApplicationsController do
     end
 
     context "success" do
-      before do
-        request.env["HTTP_REFERER"] = "maybe_root_path"
-      end
-
       it "creates an WaitingListApplication" do
 
         expect {
@@ -29,7 +25,7 @@ describe WaitingListApplicationsController do
       it "redirects to the last url" do
         good_request
 
-        expect(response).to redirect_to("maybe_root_path")
+        expect(response).to redirect_to(root_path)
       end
 
       it "sets a flash" do
