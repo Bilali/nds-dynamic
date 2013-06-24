@@ -46,6 +46,12 @@
         <a href="#" class="close">&times;</a>
       </div>
     <% end %>
+    <% if flash[:error].present? %>
+      <div data-alert class="alert-box alert">
+        <%= flash[:error] %>
+        <a href="#" class="close">&times;</a>
+      </div>
+    <% end %>
     <%= yield %>
     
     <%= javascript_include_tag "application" %>

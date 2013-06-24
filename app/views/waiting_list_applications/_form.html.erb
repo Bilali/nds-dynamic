@@ -1,0 +1,5 @@
+<%= form_for waiting_list_application do |f| %>
+  <%= f.text_field :name, :placeholder => t(".your_name") %>
+  <%= f.text_field :email, :placeholder => t(".your_email") %>
+  <%= f.submit t(".submit"), :class => "call_to_action" %>
+<% end %>

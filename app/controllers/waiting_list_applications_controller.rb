@@ -1,8 +1,18 @@
 class WaitingListApplicationsController < ApplicationController
   def create
-    WaitingListApplication.create! application_params
-    flash[:success] = I18n.t("waiting_list_applications.create.thanks")
-    redirect_to root_path
+    @waiting_list_application = WaitingListApplication.new(application_params)
+
+    if @waiting_list_application.save
+      flash[:success] = I18n.t("waiting_list_applications.create.success")
+      redirect_to :back
+    else
+      flash[:error] = I18n.t("waiting_list_applications.create.failure")
+      render :new
+    end
+  end
+
+  def new
+    @waiting_list_application = WaitingListApplication.new
   end
 
   def application_params

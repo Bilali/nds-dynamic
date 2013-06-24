@@ -72,11 +72,7 @@
 
     <div class="home-get_involved-ways panel">
       <h4><%= t(".programs.get_involved.join_us.title") %></h4>
-      <%= form_for @waiting_list_application do |f| %>
-        <%= f.text_field :name, placeholder: t(".programs.get_involved.join_us.your_name") %>
-        <%= f.text_field :email, placeholder: t(".programs.get_involved.join_us.your_email") %>
-        <%= f.submit t(".programs.get_involved.join_us.button"), class: "call_to_action" %>
-      <% end %>
+      <%= render "waiting_list_applications/form", :waiting_list_application => @waiting_list_application %>
     </div>
   </div>
 </section>

@@ -21,8 +21,13 @@
 
 en:
   waiting_list_applications:
+    form:
+      your_name: Your name
+      your_email: Your email
+      submit: Join the waiting list
     create:
-      thanks: Thanks for joining! Please check your email.
+      success: Thanks for joining! Please check your email.
+      failure: Something went wrong. Please check the sign up form and try again!
   home:
     index:
       callout:
