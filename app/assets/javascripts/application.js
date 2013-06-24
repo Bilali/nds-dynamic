@@ -17,3 +17,4 @@
 //= require_tree .
 
 $(document).foundation();
+$('.alert-box').delay(3000).slideUp();

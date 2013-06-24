@@ -20,6 +20,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  waiting_list_applications:
+    create:
+      thanks: Thanks for joining! Please check your email.
   home:
     index:
       callout:
@@ -51,9 +54,11 @@ en:
           mentor:
             title: Mentor us!
             content: A bunch of text that makes people want to mentor us
-
           join_us:
-            title: Join our mailing list
+            your_name: "Your name"
+            your_email: "Your email"
+            title: Join our waiting list
+            button: Join the waiting list
 
         sponsors:
           title: Sponsors
