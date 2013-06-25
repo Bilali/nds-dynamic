@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="large-12 columns">
+    <ul>
+      <% @waiting_list_applications.each do |application| %>
+        <li> <%= application.name %>: <%= application.email %> </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

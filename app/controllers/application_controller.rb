@@ -4,7 +4,11 @@ class ApplicationController < ActionController::Base
   before_filter :basic_authentication
 
   protected
-  
+
+  def after_sign_in_path_for(resource_or_scope)
+    admin_waiting_list_applications_path
+  end
+
   def basic_authentication
     return unless Rails.env.staging?
 
