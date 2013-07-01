@@ -1,114 +1,24 @@
 <section class="home-hero">
-  <div class="home-hero-container large-12">
-    <div class="home-hero-content row">
-      <div class="large-8 columns large-offset-1">
-        <div class="callout_panel">
-          <h2><%= t('.callout.title') %></h2>
-          <p><%= t('.callout.content') %></p>
-          <a href="#" class="call_to_action"><%= t('.callout.call_to_action') %></a>
-        </div>
-      </div> 
+  <div class="row">
+    <div class="large-12 columns">
+      <h1><%= t('.hero.title') %></h1>
     </div>
   </div>
-</section>
-
-<section class="content home-programs">
-  <div class="home-programs-overview">
-    <h2><%= t(".programs.overview.title") %> </h2>
-    <p><%= t(".programs.overview.content")%> </p>
-  </div>
-  <div class="home-programs-explanations">
-    <ul>
-      <li>
-        <div class="home-programs-explanations-image">
-          <%= image_tag("programs-web.png") %>
-        </div>
-        <div class="home-programs-explanations-content">
-          <h6><%= t(".programs.explanations.development.title") %></h6>
-          <p><%= t(".programs.explanations.development.content") %></p>
-        </div>
-      </li>
-      <li>
-        <div class="home-programs-explanations-image">
-          <%= image_tag("programs-design.png") %>
-        </div>
-        <div class="home-programs-explanations-content">
-          <h6><%= t(".programs.explanations.design.title") %></h6>
-          <p><%= t(".programs.explanations.design.content") %></p>
-        </div>
-      </li>
-      <li>
-        <div class="home-programs-explanations-image">
-          <%= image_tag("programs-entrepreneurship.png") %>
-        </div>
-        <div class="home-programs-explanations-content">
-          <h6><%= t(".programs.explanations.entrepreneurship.title") %></h6>
-          <p><%= t(".programs.explanations.entrepreneurship.content") %></p>
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<section class="content home-get_involved">
   <div class="row">
-    <div class="content-title">
-      <h2><%= t(".programs.get_involved.title") %></h2>
+    <div class="large-8 columns">
+      <p><%= t('.hero.content') %></p>
     </div>
   </div>
 
   <div class="row">
-    <div class="home-get_involved-ways">
-      <img src="http://lorempixel.com/300/100/">
-      <h4><%= t(".programs.get_involved.sponsor.title") %></h3>
-      <p><%= t(".programs.get_involved.sponsor.content") %></p>
-    </div>
-
-    <div class="home-get_involved-ways">
-      <img src="http://lorempixel.com/300/100/">
-      <h4><%= t(".programs.get_involved.mentor.title") %></h3>
-      <p><%= t(".programs.get_involved.mentor.content") %></p>
-    </div>
-
-    <div class="home-get_involved-ways panel">
-      <h4><%= t(".programs.get_involved.join_us.title") %></h4>
-      <%= render "waiting_list_applications/form", :waiting_list_application => @waiting_list_application %>
+    <div class="large-12 columns">
+      <a href="#" class="button">Apply to Attend</a>
+      or
+      <a href='#'>see how you can get involved</a>
     </div>
   </div>
 </section>
 
-<section class="content home-sponsors">
-  <div class="row">
-    <div class="content-title">
-      <h2><%= t(".programs.sponsors.title") %></h2>
-    </div>
-  </div>
-  <ul class="large-block-grid-5 small-block-grid-2">
-    <li><img src="http://lorempixel.com/300/150/"</li>
-    <li><img src="http://lorempixel.com/300/150/"</li>
-    <li><img src="http://lorempixel.com/300/150/"</li>
-    <li><img src="http://lorempixel.com/300/150/"</li>
-    <li><img src="http://lorempixel.com/300/150/"</li>
-    <li><img src="http://lorempixel.com/300/150/"</li>
-    <li><img src="http://lorempixel.com/300/150/"</li>
-    <li><img src="http://lorempixel.com/300/150/"</li>
-    <li><img src="http://lorempixel.com/300/150/"</li>
-  </ul>
+<section>
+  
 </section>
-
-<section class="content home-mission_statement">
-  <div class="row">
-    <h2><%= t(".programs.mission_statement.title") %></h2>
-  </div>
-
-  <div class="row">
-    <div class="large-7 columns">
-      <p><%= t(".programs.mission_statement.content") %></p>
-    </div>
-  </div>
-</section>
-
-<div class="row">
-  <footer>
-  </footer>
-</div>

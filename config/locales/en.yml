@@ -20,56 +20,8 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  waiting_list_applications:
-    form:
-      your_name: Your name
-      your_email: Your email
-      submit: Join the waiting list
-    create:
-      success: Thanks for joining! Please check your email.
-      failure: Something went wrong. Please check the sign up form and try again!
   home:
     index:
-      callout:
-        title: Collaborative Learning
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type."
-        call_to_action: Help make Nairobi Dev School a reality
-
-      programs:
-        overview:
-          title: Our Programs 
-          content: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-        explanations:
-          development: 
-            title: Web Development
-            content: This is a short blurb about web development. It must be really cool to want to do it. You should do it too!
-          design: 
-            title: Design
-            content: This is a short blurb about design. It must be really cool to want to do it. You should do it too!
-          entrepreneurship: 
-            title: Entrepreneurship
-            content: This is a short blurb about entrepreneurship. It must be really cool to want to do it. You should do it too!
-
-        get_involved:
-          title: Get Involved
-          sponsor:
-            title: Sponsor us!
-            content: A bunch of text that makes people want to sponsor us, with money or time
-          mentor:
-            title: Mentor us!
-            content: A bunch of text that makes people want to mentor us
-          join_us:
-            your_name: "Your name"
-            your_email: "Your email"
-            title: Join our waiting list
-            button: Join the waiting list
-
-        sponsors:
-          title: Sponsors
-
-        mission_statement:
-          title: Mission Statement
-          content: We have a mission to have a mission to serve your mission with our mission. It will be a great mission. Trust us. 
-
-
+      hero:
+        title: Join us today & learn code with us
+        content: Nairobi Developer School is a free three-month, full-time school for programmers to learn and improve their skills!
