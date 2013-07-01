@@ -43,25 +43,25 @@
     </nav>
   </div>
     <% if flash[:alert].present? %>
-      <div data-alert class="alert-box alert">
+      <div data-alert class="fixed alert-box alert">
         <%= flash[:alert] %>
         <a href="#" class="close">&times;</a>
       </div>
     <% end %>
     <% if flash[:success].present? %>
-      <div data-alert class="alert-box success">
+      <div data-alert class="fixed alert-box success">
         <%= flash[:success] %>
         <a href="#" class="close">&times;</a>
       </div>
     <% end %>
     <% if flash[:notice].present? %>
-      <div data-alert class="alert-box">
+      <div data-alert class="fixed alert-box">
         <%= flash[:notice] %>
         <a href="#" class="close">&times;</a>
       </div>
     <% end %>
     <% if flash[:error].present? %>
-      <div data-alert class="alert-box alert">
+      <div data-alert class="fixed alert-box alert">
         <%= flash[:error] %>
         <a href="#" class="close">&times;</a>
       </div>
