@@ -1,4 +1,4 @@
-class Admin < ActiveRecord::Base
+class User < ActiveRecord::Base
   # removed registerable; anyone can register as admin if this is left here.
   devise :database_authenticatable,
          :recoverable, :rememberable, :trackable, :validatable

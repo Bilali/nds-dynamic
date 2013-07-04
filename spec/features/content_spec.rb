@@ -6,9 +6,8 @@ describe "viewing static content" do
 
     expect(page).to have_content "Nairobi Dev School"
 
-    expect(page).to have_link "Our Story"    
-    expect(page).to have_link "Register"    
+    expect(page).to have_link "Apply to Attend"    
 
-    expect(page).to have_content "Collaborative Learning"
+    expect(page).to have_content "Nairobi Dev School"
   end
 end

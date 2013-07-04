@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "applying to the waiting list" do
-  it "allows guest to apply to the waiting list" do
+  xit "allows guest to apply to the waiting list" do
     visit "/"
 
     fill_in "Your name", with: "Njeri Chelimo"

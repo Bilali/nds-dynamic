@@ -2,8 +2,8 @@ require 'spec_helper'
 
 feature "waiting lists applications" do
   scenario "viewing waiting lists applications" do
-    admin = FactoryGirl.create(:admin,
-                               email: "admin@nds.com",
+    user = FactoryGirl.create(:user,
+                               email: "user@nds.com",
                                password: "password")
 
     waiting_list_application = FactoryGirl.create(:waiting_list_application,
@@ -20,9 +20,9 @@ feature "waiting lists applications" do
 end
 
 def sign_in
-  visit "/admins/sign_in"
+  visit "/users/sign_in"
 
-  fill_in "Email",    with: "admin@nds.com"
+  fill_in "Email",    with: "user@nds.com"
   fill_in "Password", with: "password"
 
   click_on "Sign in"
