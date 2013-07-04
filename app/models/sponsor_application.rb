@@ -1,6 +1,6 @@
-class WaitingListApplication < Application
+class SponsorApplication < Application
   REQUIRED_ATTRS = [
-    :name, :email
+    :name, :email, :company
   ]
   validates(*REQUIRED_ATTRS, :presence => true)
 end

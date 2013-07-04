@@ -1,5 +1,6 @@
-<%= simple_form_for waiting_list_application do |f| %>
+<%= simple_form_for sponsor_application do |f| %>
   <%= f.input :name, :label => false %>
+  <%= f.input :company, :label => false %>
   <%= f.input :email, :label => false %>
   <%= f.submit t(".submit"), :class => "call_to_action" %>
 <% end %>

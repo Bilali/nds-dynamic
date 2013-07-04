@@ -5,7 +5,7 @@ describe WaitingListApplicationsController do
   let(:email) { Faker::Internet.email }
 
   describe "post #create" do
-    let(:valid_params) { {:name => name, :email => email} }
+    let(:valid_params) { { :name => name, :email => email } }
     let(:good_request) do
       post :create, :waiting_list_application => valid_params
     end
@@ -17,9 +17,9 @@ describe WaitingListApplicationsController do
           good_request
         }.to change{ WaitingListApplication.count }.by(1)
 
-        application = WaitingListApplication.last
-        expect(application.name).to eq(name)
-        expect(application.email).to eq(email)
+        waiting_list_application = WaitingListApplication.last
+        expect(waiting_list_application.name).to eq(name)
+        expect(waiting_list_application.email).to eq(email)
       end
 
       it "redirects to the last url" do
