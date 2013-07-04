@@ -6,9 +6,9 @@ describe "applying to be a sponsor" do
 
 		click_on "Become a Sponsor"
 
-    fill_in "Your name", with: "Njeri Chelimo"
-		fill_in "Your company", with: "Nairobi Dev School"
-    fill_in "Your email", with: "dev@nds.org"
+    fill_in "Name", with: "Njeri Chelimo"
+		fill_in "Company", with: "Nairobi Dev School"
+    fill_in "Email", with: "dev@nds.org"
 
     click_on "Apply"
 
