@@ -1,0 +1,3 @@
+class AttendeeApplicationsController < BaseApplicationsController
+	model :attendee_application
+end
