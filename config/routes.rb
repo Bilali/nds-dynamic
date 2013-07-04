@@ -8,4 +8,5 @@ NairobiDevSchool::Application.routes.draw do
 
 	resources :sponsor_applications, only: [:new, :create]
   resources :waiting_list_applications, only: [:create, :new]
+  resources :mentor_applications, only: [:create, :new]
 end
