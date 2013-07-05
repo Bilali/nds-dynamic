@@ -1,9 +1,4 @@
 class BaseApplicationsController < ApplicationController
-  def self.model(model_name)
-    @model_name = model_name  
-    @model_class = model_name.to_s.camelize.constantize
-  end
-
   def new
     set_model(model_class.new)
   end
@@ -22,20 +17,16 @@ class BaseApplicationsController < ApplicationController
 
   private
 
+  def model_name
+    model_class.model_name.param_key
+  end
+
   def set_model(value)
     instance_variable_set(:"@#{model_name}", value)
   end
 
   def model
     instance_variable_get("@#{model_name}")
-  end
-
-  def model_name
-    self.class.instance_variable_get(:@model_name)  
-  end
-
-  def model_class
-    self.class.instance_variable_get(:@model_class) 
   end
 
   def application_params

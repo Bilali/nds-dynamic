@@ -1,3 +1,5 @@
 class WaitingListApplicationsController < BaseApplicationsController
-  model :waiting_list_application
+  def model_class
+    WaitingListApplication
+  end
 end

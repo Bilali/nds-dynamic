@@ -1,3 +1,5 @@
 class SponsorApplicationsController < BaseApplicationsController
-  model :sponsor_application
+  def model_class
+    SponsorApplication
+  end
 end

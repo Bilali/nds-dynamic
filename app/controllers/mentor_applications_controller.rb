@@ -1,3 +1,5 @@
 class MentorApplicationsController < BaseApplicationsController
-  model :mentor_application
+  def model_class
+    MentorApplication
+  end
 end

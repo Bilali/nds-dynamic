@@ -1,3 +1,5 @@
 class AttendeeApplicationsController < BaseApplicationsController
-	model :attendee_application
+  def model_class
+    AttendeeApplication
+  end
 end
