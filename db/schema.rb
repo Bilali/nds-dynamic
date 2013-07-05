@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130704223530) do
+ActiveRecord::Schema.define(version: 20130705063357) do
 
   create_table "applications", force: true do |t|
     t.string   "name"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20130704223530) do
     t.datetime "updated_at"
     t.string   "company"
     t.string   "type"
+    t.text     "reason_for_applying"
   end
 
   create_table "users", force: true do |t|

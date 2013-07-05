@@ -3,12 +3,14 @@ require 'spec_helper'
 describe AttendeeApplicationsController do
   let(:name) { Faker::Name.name }
   let(:email) { Faker::Internet.email }
+  let(:reason_for_applying) { Faker::Lorem.sentence }
 
   describe "post #create" do
     let(:valid_params) do 
       {
         :name => name, 
         :email => email,
+        :reason_for_applying => reason_for_applying
       } 
     end
 
@@ -25,6 +27,7 @@ describe AttendeeApplicationsController do
         application = AttendeeApplication.last
         expect(application.name).to eq(name)
         expect(application.email).to eq(email)
+        expect(application.reason_for_applying).to eq(reason_for_applying)
       end
 
       it "redirects to the last url" do

@@ -31,6 +31,11 @@ class BaseApplicationsController < ApplicationController
 
   def application_params
     params.require(model_name)
-    .permit(*model_class.const_get("REQUIRED_ATTRS"))
+    .permit(*attributes)
+  end
+
+  def attributes
+    model_class.const_get("REQUIRED_ATTRS") + 
+      model_class.const_get("ADDITIONAL_ATTRS")
   end
 end
