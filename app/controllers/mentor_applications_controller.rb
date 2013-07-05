@@ -1,3 +1,3 @@
 class MentorApplicationsController < BaseApplicationsController
-	model :mentor_application
+  model :mentor_application
 end

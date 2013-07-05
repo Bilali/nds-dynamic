@@ -1,3 +1,3 @@
 class SponsorApplicationsController < BaseApplicationsController
-	model :sponsor_application
+  model :sponsor_application
 end
