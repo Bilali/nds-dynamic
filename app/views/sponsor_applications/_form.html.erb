@@ -1,0 +1,6 @@
+<%= simple_form_for sponsor_application do |f| %>
+  <%= f.input :name  %>
+  <%= f.input :company  %>
+  <%= f.input :email  %>
+  <%= f.submit t("apply"), :class => "call_to_action expand" %>
+<% end %>

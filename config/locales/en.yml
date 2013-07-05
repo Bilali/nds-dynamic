@@ -1,4 +1,10 @@
 en:
+  apply: Apply
+  applications:
+    create:
+      success: Thanks for applying! Please check your email.
+      failure: Please correct the fields below.
+  
   home:
     index:
       hero:

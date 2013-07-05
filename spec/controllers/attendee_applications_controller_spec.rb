@@ -1,25 +1,33 @@
 require 'spec_helper'
 
-describe WaitingListApplicationsController do
+describe AttendeeApplicationsController do
   let(:name) { Faker::Name.name }
   let(:email) { Faker::Internet.email }
+  let(:reason_for_applying) { Faker::Lorem.sentence }
 
   describe "post #create" do
-    let(:valid_params) { { :name => name, :email => email } }
+    let(:valid_params) do 
+      {
+        :name => name, 
+        :email => email,
+        :reason_for_applying => reason_for_applying
+      } 
+    end
+
     let(:good_request) do
-      post :create, :waiting_list_application => valid_params
+      post :create, :attendee_application => valid_params
     end
 
     context "success" do
-      it "creates an WaitingListApplication" do
-
+      it "creates an AttendeeApplication" do
         expect {
           good_request
-        }.to change{ WaitingListApplication.count }.by(1)
+        }.to change{ AttendeeApplication.count }.by(1)
 
-        waiting_list_application = WaitingListApplication.last
-        expect(waiting_list_application.name).to eq(name)
-        expect(waiting_list_application.email).to eq(email)
+        application = AttendeeApplication.last
+        expect(application.name).to eq(name)
+        expect(application.email).to eq(email)
+        expect(application.reason_for_applying).to eq(reason_for_applying)
       end
 
       it "redirects to the last url" do
@@ -37,20 +45,20 @@ describe WaitingListApplicationsController do
 
     context "failure" do
       let(:bad_request) do
-        post :create, :waiting_list_application => {:name => "", :email => ""}
+        post :create, :attendee_application => {:name => "", :email => ""}
       end
 
-      it "doesn't create a waiting list application" do
+      it "doesn't create a attendee application" do
         expect {
           bad_request
-        }.not_to change{ WaitingListApplication.count }.by(1)
+        }.not_to change{ AttendeeApplication.count }.by(1)
       end
 
       it "has errors on the model" do
         bad_request
 
         expect(
-          assigns[:waiting_list_application].errors
+          assigns[:attendee_application].errors
         ).not_to be_empty
       end
 

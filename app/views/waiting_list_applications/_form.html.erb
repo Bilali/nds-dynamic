@@ -1,5 +1,5 @@
 <%= simple_form_for waiting_list_application do |f| %>
-  <%= f.input :name, :label => false, :placeholder => t(".your_name") %>
-  <%= f.input :email, :label => false, :placeholder => t(".your_email") %>
+  <%= f.input :name %>
+  <%= f.input :email %>
   <%= f.submit t(".submit"), :class => "call_to_action" %>
 <% end %>
