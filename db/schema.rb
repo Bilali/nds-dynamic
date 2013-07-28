@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130705063357) do
+ActiveRecord::Schema.define(version: 20130728170258) do
 
   create_table "applications", force: true do |t|
     t.string   "name"
@@ -21,6 +21,13 @@ ActiveRecord::Schema.define(version: 20130705063357) do
     t.string   "company"
     t.string   "type"
     t.text     "reason_for_applying"
+    t.string   "twitter"
+    t.string   "address_line_1"
+    t.string   "address_line_2"
+    t.string   "city"
+    t.string   "state_or_province"
+    t.string   "postcode"
+    t.string   "phone"
   end
 
   create_table "users", force: true do |t|

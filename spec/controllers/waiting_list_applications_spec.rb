@@ -12,7 +12,6 @@ describe WaitingListApplicationsController do
 
     context "success" do
       it "creates an WaitingListApplication" do
-
         expect {
           good_request
         }.to change{ WaitingListApplication.count }.by(1)
