@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "applying to be a attendee" do
-  it "allows guest to apply to be a attendee" do
+  xit "allows guest to apply to be a attendee" do
     visit "/"
 
     within ".top-bar" do
