@@ -11,6 +11,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'capybara'
   gem 'faker'
+  gem 'selenium-webdriver'
   gem 'launchy'
 end
 
@@ -28,7 +29,6 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'devise', '3.0.0.rc'
 gem 'factory_girl_rails'
-
 gem 'cancan'
 
 group :doc do
