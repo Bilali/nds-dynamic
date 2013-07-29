@@ -30,6 +30,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'devise', '3.0.0.rc'
 gem 'factory_girl_rails'
 gem 'cancan'
+gem 'rolify', "~> 3.2.0"
 
 group :doc do
   gem 'sdoc', require: false
