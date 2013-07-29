@@ -1,6 +1,14 @@
 <%= simple_form_for sponsor_application do |f| %>
   <%= f.input :name  %>
-  <%= f.input :company  %>
   <%= f.input :email  %>
+  <%= f.input :company  %>
+  <%= f.input :twitter  %>
+  <%= f.input :address_line_1  %>
+  <%= f.input :address_line_2  %>
+  <%= f.input :city  %>
+  <%= f.input :state_or_province, :label => "State/Province"  %>
+  <%= f.input :postcode, :label => "Postcode/Zip Code"  %>
+  <%= f.input :phone  %>
+
   <%= f.submit t("apply"), :class => "call_to_action expand" %>
 <% end %>
