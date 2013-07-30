@@ -3,6 +3,15 @@ ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
+gem "unicorn"
+
+group :development do
+  gem 'capistrano', '~> 2.15.5'
+  gem 'capistrano-rails', :require => false
+  gem 'capistrano-unicorn', :require => false
+  gem 'rvm-capistrano', :require => false
+end
+
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do
