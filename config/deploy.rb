@@ -9,7 +9,7 @@ server "37.139.15.190", :web, :app, :db, primary: true
 
 set :application, "nds"
 set :user, "rails"
-set :deploy_to, "/home/#{user}/#{application}"
+set :deploy_to, "/home/#{user}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 
