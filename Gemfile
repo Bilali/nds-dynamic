@@ -5,9 +5,8 @@ ruby '2.0.0'
 gem 'rails', '4.0.0'
 
 group :development do
-  gem 'capistrano', '~> 2.15.5'
-  gem 'capistrano-rails', :require => false
-  gem 'rvm-capistrano', :require => false
+  gem "capistrano", "~> 3.0.0.pre13"
+  gem 'capistrano-rails', '~> 0.0.7'
 end
 
 

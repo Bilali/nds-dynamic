@@ -1,25 +1,14 @@
-require "bundler/capistrano"
+set :application, 'nairobi dev school'
+set :repo_url, 'git@github.com:jetaggart/nairobi-dev-school.git '
 
-set :rvm_ruby_string, '2.0.0-p247'
-set :rvm_type, :system
+ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
-require "rvm/capistrano" # Load RVM's capistrano plugin.
+set :deploy_to, "/home/deploy/nds"
+set :scm, :git
+set :branch, 'master'
 
-server "37.139.15.190", :web, :app, :db, primary: true
+set :format, :pretty
+set :log_level, :debug
 
-set :application, "nds"
-set :user, "rails"
-set :deploy_to, "/home/#{user}/#{application}"
-set :deploy_via, :remote_cache
-set :use_sudo, false
-
-set :scm, "git"
-set :repository, "git@github.com:jetaggart/nairobi-dev-school.git"
-set :branch, "master"
-
-default_run_options[:pty] = true
-ssh_options[:forward_agent] = true
-
-after 'deploy:update_code', 'deploy:migrate'
-after "deploy", "deploy:cleanup" # keep only the last 5 releases
-
+# set :default_environment, { path: "/opt/ruby/bin:$PATH" }
+set :keep_releases, 5
