@@ -10,10 +10,10 @@ class ApplicationController < ActionController::Base
   end
 
   def basic_authentication
-    return unless Rails.env.staging?
+    return if Rails.env.development? || Rails.env.test?
 
     authenticate_or_request_with_http_basic do |username, password|
-      username == ENV["STAGING_USERNAME"] && password == ENV["STAGING_PASSWORD"]
+      username == "nds" && password == "nairobi_dev_school!"
     end
   end
 end
