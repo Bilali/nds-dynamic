@@ -1,7 +1,16 @@
+app_dir = "/home/deploy/nds/current"
+
+worker_processes 3
+working_directory app_dir
+
 timeout 15
 preload_app true
 
 listen "/tmp/nds.unicorn.sock"
+
+pid "#{app_dir}/pids/unicorn.pid"
+stderr_path "#{app_dir}/log/unicorn.stderr.log"
+stdout_path "#{app_dir}/log/unicorn.stdout.log"
 
 before_fork do |server, worker|
   Signal.trap 'TERM' do
