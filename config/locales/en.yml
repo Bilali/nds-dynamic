@@ -17,3 +17,7 @@ en:
         content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         become_a_sponsor: Become a Sponsor
         become_a_mentor: Become a Mentor
+
+      apply:
+        title: What it means to be a student
+        content: As a student it means putting in the hours to learn from the best, grokking the terminal, squeezing up all creative juices you have. Every day, you wake up to face a new challenge with new tools that we will equip you with. By studying top notch web skills, you position yourself to become rockstar web startup founders, awesome software development apprentices and rockstar beginners
