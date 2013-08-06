@@ -3,12 +3,12 @@ class SponsorApplication < Application
                     :email,
                     :company,
                     :address_line_1,
-                    :address_line_2,
                     :city,
                     :state_or_province]
   
   ADDITIONAL_ATTRS = [:twitter,
                       :phone,
+                      :address_line_2,
                       :postcode]
 
   validates(*REQUIRED_ATTRS, :presence => true)

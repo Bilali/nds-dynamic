@@ -2,6 +2,7 @@ require 'spec_helper'
 
 feature "waiting lists applications" do
   scenario "viewing waiting lists applications by admin" do
+    pending('need to do')
     user = FactoryGirl.create(:user,
                                email: "user@nds.com",
                                password: "password")

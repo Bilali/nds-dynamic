@@ -4,6 +4,9 @@ describe SponsorApplicationsController do
   let(:name) { Faker::Name.name }
   let(:email) { Faker::Internet.email }
   let(:company) { Faker::Name.name }
+  let(:address_line_1) { Faker::Address.street_name }
+  let(:city) { Faker::Address.city }
+  let(:state) { Faker::Address.state }
 
   describe "post #create" do
     let(:valid_params) do 
@@ -11,6 +14,9 @@ describe SponsorApplicationsController do
         :name => name, 
         :company => company, 
         :email => email,
+        :address_line_1 => address_line_1,
+        :city => city,
+        :state_or_province => state
       } 
     end
 

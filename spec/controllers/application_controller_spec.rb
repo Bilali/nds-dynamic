@@ -30,9 +30,9 @@ describe TestController do
     context "production" do
       let(:env) { "production" }
 
-      it "doesn't require auth" do
+      it "requires auth" do
         get :some_route 
-        expect(response).to be_success
+        expect(response).to_not be_success
       end
     end
 
