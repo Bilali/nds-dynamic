@@ -8,8 +8,10 @@ en:
   home:
     index:
       hero:
-        title: Join us today & learn code with us
-        content: Nairobi Developer School is a free three-month, full-time school for programmers to learn and improve their skills!
+        title: Nairobi Dev School
+        content: Building up a new wave of developers.
+        apply_button: Apply to Attend
+        get_involved_link: see how you can get involved
       get_involved:
         title: Get involved
         content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

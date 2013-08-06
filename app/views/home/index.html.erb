@@ -12,9 +12,11 @@
 
   <div class="row">
     <div class="large-12 columns">
-      <a href="<%= new_attendee_application_path  %>" class="button">Apply to Attend</a>
+      <a href="<%= new_attendee_application_path  %>" class="button">
+        <%= t('.hero.apply_button') %>
+      </a>
       or
-      <a href='#'>see how you can get involved</a>
+      <a href='#'><%= t('.hero.get_involved_link') %></a>
     </div>
   </div>
 </section>
