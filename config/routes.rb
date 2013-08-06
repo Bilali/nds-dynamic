@@ -3,7 +3,9 @@ NairobiDevSchool::Application.routes.draw do
   root to: "home#index"
 
   namespace :admin do
-    resources :waiting_list_applications, only: :index
+    resources :attendee_applications, only: :index
+    resources :mentor_applications, only: :index
+    resources :sponsor_applications, only: :index
   end
 
 	resources :sponsor_applications, only: [:new, :create]

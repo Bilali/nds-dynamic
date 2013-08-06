@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+		<meta charset="utf-8" />
+
+		<!-- Uncomment to make IE8 render like IE7 -->
+		<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
+
+		<!-- Set the viewport width to device width for mobile -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title><%= content_for?(:title) ? yield(:title) : "Nairobi Dev School" %></title>
+
+		<%= stylesheet_link_tag    "application" %>
+		<%= javascript_include_tag "vendor/custom.modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+
+  <div class="fixed contain-to-grid">
+    <nav class="top-bar">
+      <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name">
+          <h1><a href="<%= root_path %>">Nairobi Dev School</a></h1>
+        </li>
+      </ul>
+
+      <section class="top-bar-section">
+         <ul class="right">
+          <li><a href="<%= admin_attendee_applications_path %>">Attendee Applications</a></li>
+          <li><a href="<%= admin_sponsor_applications_path %>">Sponsor Applications</a></li>
+          <li><a href="<%= admin_mentor_applications_path %>">Mentor Applications</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+    <% if flash[:alert].present? %>
+      <div data-alert class="fixed alert-box alert">
+        <%= flash[:alert] %>
+        <a href="#" class="close">&times;</a>
+      </div>
+    <% end %>
+    <% if flash[:success].present? %>
+      <div data-alert class="fixed alert-box success">
+        <%= flash[:success] %>
+        <a href="#" class="close">&times;</a>
+      </div>
+    <% end %>
+    <% if flash[:notice].present? %>
+      <div data-alert class="fixed alert-box">
+        <%= flash[:notice] %>
+        <a href="#" class="close">&times;</a>
+      </div>
+    <% end %>
+    <% if flash[:error].present? %>
+      <div data-alert class="fixed alert-box alert">
+        <%= flash[:error] %>
+        <a href="#" class="close">&times;</a>
+      </div>
+    <% end %>
+      <%= yield %>
+
+
+
+    <footer>
+        <div class="row">
+            <div class="large-12 columns">
+                <p>Copyright &copy; 2013 Nairobi Developer School. Lovingly handcrafted by us in Nairobi.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>
+
