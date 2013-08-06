@@ -9,16 +9,6 @@
       <p><%= t('.hero.content') %></p>
     </div>
   </div>
-
-  <div class="row">
-    <div class="large-12 columns">
-      <a href="<%= new_attendee_application_path  %>" class="button">
-        <%= t('.hero.apply_button') %>
-      </a>
-      or
-      <a href='#'><%= t('.hero.get_involved_link') %></a>
-    </div>
-  </div>
 </section>
 
 <section class="home-content">
@@ -29,10 +19,18 @@
 	</div>
 
 	<div class="row">
-		<div class="large-8 columns">
+		<div class="large-12 columns">
 			<p><%= t('.apply.content') %></p>
 		</div>
 	</div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <a href="<%= new_attendee_application_path  %>" class="button expand">
+        <%= t('.apply.button') %>
+      </a>
+    </div>
+    </div>
 </section>
 
 <section class="home-content">
