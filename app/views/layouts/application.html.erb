@@ -15,8 +15,12 @@
 
 		<title><%= content_for?(:title) ? yield(:title) : "Nairobi Dev School" %></title>
 
-		<%= stylesheet_link_tag    "application" %>
-		<%= javascript_include_tag "vendor/custom.modernizr" %>
+		<%= stylesheet_link_tag    "application",
+                                "http://fonts.googleapis.com/css?family=Raleway",
+                                "http://fonts.googleapis.com/css?family=Roboto",
+                                "http://fonts.googleapis.com/css?family=Oxygen",
+                                "http://fonts.googleapis.com/css?family=Port+Lligat+Slab"
+                                %>
     <%= csrf_meta_tags %>
   </head>
 
@@ -27,7 +31,7 @@
       <ul class="title-area">
         <!-- Title Area -->
         <li class="name">
-          <h1><a href="<%= root_path %>">Nairobi Dev School</a></h1>
+          <h1 class="heading"><a href="<%= root_path %>">Nairobi Dev School</a></h1>
         </li>
       </ul>
 
@@ -35,7 +39,7 @@
          <ul class="right">
           <li><a href="#">About</a></li>
           <li><a href="#">Programs</a></li>
-          <li><a href="#">Get Involved</a></li>
+          <li><a name="#">Get Involved</a></li>
           <li class="divider"></li>
           <li><a href="<%= new_attendee_application_path  %>">Apply to Attend</a></li>
         </ul>
@@ -77,8 +81,8 @@
         </div>
     </footer>
 
-
     <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "vendor/custom.modernizr" %>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
