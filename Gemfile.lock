@@ -219,7 +219,7 @@ DEPENDENCIES
   capistrano (~> 2.15.0)
   capistrano-unicorn
   capybara
-  devise (= 3.0.0.rc)
+  devise
   factory_girl_rails
   faker
   jbuilder (~> 1.2)
