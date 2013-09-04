@@ -1,31 +1,8 @@
-
 <div class="row">
   <div class="large-12 columns">
     <h1>Mentor Applications</h1>
-
-<% unless @mentor_applications %>
-    <table class="table">
-        <thead>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Company</th>
-        </thead>
-        <% @mentor_applications.each do |ma| %>
-        <tr>
-            <td><%= ma.name %></td>
-            <td><%= ma.email %></td>
-            <td><%= ma.company %></td>
-        </tr>
-        <% end %>
-
-    </table>
-<% else %>
-    <div>
-        There are no mentor applications
-    </div>
-<% end %>
   </div>
-
 </div>
 
 <%= render partial: 'admin/applications', :locals => {applications: @mentor_applications} %>
+
