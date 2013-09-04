@@ -3,4 +3,5 @@ class MentorApplication < Application
   ADDITIONAL_ATTRS = [:company]
 
   validates(*REQUIRED_ATTRS, :presence => true)
+  resourcify
 end
