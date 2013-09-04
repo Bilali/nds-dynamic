@@ -80,6 +80,13 @@
       <div class="row">
           <div class="large-12 columns" id="wrap">
               <p>Copyright &copy; 2013 Nairobi Developer School. Lovingly handcrafted by us in Nairobi.</p>
+              <span style="float: right;">
+                <% if signed_in? %>
+                    <%= link_to "Logout", logout_path %>
+                <% else %>
+                    <%= link_to "Login", login_path%>
+                <% end %>
+              </span>
           </div>
       </div>
   </footer>
