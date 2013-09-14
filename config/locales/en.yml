@@ -6,6 +6,10 @@ en:
       failure: Please correct the fields below.
 
   home:
+    about_us:
+      hero:
+        title: The NDS Story
+        content:
     programs:
       hero:
         title: What We do
