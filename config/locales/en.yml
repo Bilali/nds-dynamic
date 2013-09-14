@@ -6,6 +6,38 @@ en:
       failure: Please correct the fields below.
 
   home:
+    programs:
+      hero:
+        title: What We do
+        program_breakdown:
+          curriculum:
+            title: Curriculum
+            content:  Nairobi Dev School will be using the Jumpstart lab
+                      curriculum used by gSchool. Through our unique partnership
+                      with jumpstart lab, we will be able to use the well
+                      formulated curriculum. The curriculum is being worked on and
+                      adjusted accordingly until it is perfect for the students
+                      accepted. The curriculum involves teaching programming using
+                      the Ruby programming language, then moving into building web
+                      applications using Ruby on Rails. The program is
+                      project-based, allowing the students to use their
+                      programming skills as they learn.
+          mentorship:
+            title: Mentorship
+            content:  Nairobi Dev School students will get a mentor to walk with
+                      them as they start out their journey to programming
+                      rockstar-dom!
+          apprenticeship:
+            title: Apprenticeship
+            content: Nairobi Dev School has partnered with several local
+                     startups that are happy to take up graduating students
+                     as programming apprentices.
+          community:
+            title: Community
+            content: At NDS, we are passionate about creating a community of
+                     hungry learners and skilled programmers. We are involeved in
+                     the local Mozilla community hold these monthly meetups -
+                     Treehouse meetup, Ruby meetup, Codecademy meetup.
     index:
       hero:
         title: Nairobi Dev School
@@ -44,24 +76,3 @@ en:
                  startup founders, awesome software development apprentices and
                  rockstar beginners
         button: Apply to Attend
-      programs:
-        curriculum: Nairobi Dev School will be using the Jumpstart lab
-                    curriculum used by gSchool. Through our unique partnership
-                    with jumpstart lab, we will be able to use the well
-                    formulated curriculum. The curriculum is being worked on and
-                    adjusted accordingly until it is perfect for the students
-                    accepted. The curriculum involves teaching programming using
-                    the Ruby programming language, then moving into building web
-                    applications using Ruby on Rails. The program is
-                    project-based, allowing the students to use their
-                    programming skills as they learn.
-        mentorship: Nairobi Dev School students will get a mentor to walk with
-                    them as they start out their journey to programming
-                    rockstar-dom!
-        apprenticeship: Nairobi Dev School has partnered with several local
-                        startups that are happy to take up graduating students
-                        as programming apprentices.
-        community: At NDS, we are passionate about creating a community of
-                   hungry learners and skilled programmers. We are involeved in
-                   the local Mozilla community hold these monthly meetups -
-                   Treehouse meetup, Ruby meetup.

@@ -7,6 +7,9 @@ NairobiDevSchool::Application.routes.draw do
   end
 
   root to: "home#index"
+  get "/programs" => "home#programs"
+  get "/supporters" => "home#supporters"
+  get "/about" => "home#about_us"
 
   namespace :admin do
     resources :attendee_applications, only: :index

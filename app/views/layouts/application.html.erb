@@ -38,9 +38,9 @@
 
         <section class="top-bar-section">
            <ul class="right">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Programs</a></li>
-            <li><a name="#">Get Involved</a></li>
+            <li><%= link_to "About Us", about_path %></li>
+            <li><%= link_to "Programs", programs_path %></li>
+            <li><%= link_to "Supporters", supporters_path %></li>
             <li class="divider"></li>
             <li><a href="<%= new_attendee_application_path  %>">Apply to Attend</a></li>
           </ul>
