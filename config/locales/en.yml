@@ -9,7 +9,9 @@ en:
     about_us:
       hero:
         title: The NDS Story
-        content:
+        content: Nairobi Dev School is an intensive 12 week traning program in
+                 Nairobi, Kenya. We focus on Web Development using Ruby on
+                 Rails.
     programs:
       hero:
         title: What We do
@@ -47,7 +49,7 @@ en:
         title: Nairobi Dev School
         content: Building up a new wave of developers.
         apply_button: Apply to Attend
-        get_involved_link: see how you can get involved
+        get_involved_link: See how you can get involved
       get_involved:
         title: Get involved
         content:
@@ -59,10 +61,15 @@ en:
                    great cause. How can we make the impact greater? How can we
                    reach more programmers in Africa? Tell us about it! We could
                    work together!
-          sponsor_us: You or your company can sponsor any of the
-                     things we need for the school. You can sponsor the space,
-                     internet connection, electricity, desks, chairs, laptops for
-                     students who are unable to acquire one, or any support service!
+          sponsor_us: You or your company can sponsor any of the things we need
+                      for the school. You will be supporting students to attend,
+                      complete and succeed at the Nairobi Dev School. The
+                      monetary support will go to renting space for the school
+                      in Nairobi, Reliable, high-speed internet connection,
+                      Utilities for the school, Chairs, desks and any other
+                      furniture necessary furniture, Laptops and necessary
+                      equipment for the students, Financial support to eligible
+                      participants.
           mentor_us: Are you a dev? Volunteer to mentor some of Nairobi Dev School
                      attendees!
           ilias: Ilias from Thoughtworks training at the Nairobi Dev School
