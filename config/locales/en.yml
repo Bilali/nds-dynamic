@@ -29,14 +29,20 @@ en:
                      students who are unable to acquire one, or any support service!
           mentor_us: Are you a dev? Volunteer to mentor some of Nairobi Dev School
                      attendees!
-          ilias: Ilias from Thoughtworks training at the Nairobi Dev School pilot program
-
+          ilias: Ilias from Thoughtworks training at the Nairobi Dev School
+                 pilot program
         become_a_sponsor: Become a Sponsor
         become_a_mentor: Become a Mentor
 
       apply:
         title: What it means to be a student
-        content: As a student it means putting in the hours to learn from the best, grokking the terminal, squeezing up all creative juices you have. Every day, you wake up to face a new challenge with new tools that we will equip you with. By studying top notch web skills, you position yourself to become rockstar web startup founders, awesome software development apprentices and rockstar beginners
+        content: As a student it means putting in the hours to learn from the
+                 best, grokking the terminal, squeezing up all creative juices
+                 you have. Every day, you wake up to face a new challenge with
+                 new tools that we will equip you with. By studying top notch
+                 web skills, you position yourself to become rockstar web
+                 startup founders, awesome software development apprentices and
+                 rockstar beginners
         button: Apply to Attend
       programs:
         curriculum: Nairobi Dev School will be using the Jumpstart lab
