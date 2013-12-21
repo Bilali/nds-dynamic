@@ -21,6 +21,7 @@ group :development, :test do
   gem 'faker'
   gem 'selenium-webdriver'
   gem 'launchy'
+  gem 'guard-rspec'
 end
 
 group :production do
@@ -39,8 +40,3 @@ gem 'devise'
 gem 'factory_girl_rails'
 gem 'cancan'
 gem 'rolify', "~> 3.2.0"
-
-group :doc do
-  gem 'sdoc', require: false
-end
-

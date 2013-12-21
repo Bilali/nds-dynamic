@@ -1,8 +1,11 @@
 <%= simple_form_for attendee_application do |f| %>
   <%= f.input :name  %>
   <%= f.input :email  %>
-  <%= f.input :reason_for_applying %>
-  <%= f.input :youtube_or_vimeo_link %>
+  <%= f.input :twitter  %>
   <%= f.input :github_or_bitbucket_profile %>
+  <%= f.input :reason_for_applying, label: "Reason for applying. Please say a few sentences" %>
+  <%= f.input :what_to_do_after_nds, label: "What would you like to do after NDS?" %>
+  <%= f.input :can_pay_fees, as: :boolean, label: "I can afford the $636 batch fee." %>
+  <%= f.input :reason_for_sponsorship, label: "If you can't afford the batch fee please tell us why you need help!" %>
   <%= f.submit t("apply"), :class => "call_to_action expand" %>
 <% end %>

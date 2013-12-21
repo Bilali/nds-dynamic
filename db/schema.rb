@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130809145854) do
+ActiveRecord::Schema.define(version: 20131221180843) do
 
   create_table "applications", force: true do |t|
     t.string   "name"
@@ -30,6 +30,9 @@ ActiveRecord::Schema.define(version: 20130809145854) do
     t.string   "phone"
     t.string   "youtube_or_vimeo_link"
     t.string   "github_or_bitbucket_profile"
+    t.text     "what_to_do_after_nds"
+    t.boolean  "can_pay_fees"
+    t.text     "reason_for_sponsorship"
   end
 
   create_table "roles", force: true do |t|
