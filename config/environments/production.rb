@@ -76,5 +76,17 @@ NairobiDevSchool::Application.configure do
   # config.autoflush_log = false
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
+
+    config.action_mailer.default_url_options = { :host => "nairobidevschool.org" }
+  ActionMailer::Base.smtp_settings = {
+    :port =>           '587',
+    :address =>        'smtp.mandrillapp.com',
+    :user_name =>      ENV['MANDRILL_USERNAME'],
+    :password =>       ENV['MANDRILL_APIKEY'],
+    :domain =>         'heroku.com',
+    :authentication => :plain
+  }
+  ActionMailer::Base.delivery_method = :smtp
+
   config.log_formatter = ::Logger::Formatter.new
 end
