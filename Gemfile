@@ -41,3 +41,4 @@ gem 'cancan'
 gem 'rolify', "~> 3.2.0"
 gem 'newrelic_rpm'
 gem 'foundation-rails'
+gem 'rails_admin'

@@ -4,94 +4,119 @@
 <!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
-  <head>
-		<meta charset="utf-8" />
+    <head>
+	<meta charset="utf-8" />
 
-		<!-- Uncomment to make IE8 render like IE7 -->
-		<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
+	<!-- Uncomment to make IE8 render like IE7 -->
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
 
-		<!-- Set the viewport width to device width for mobile -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title><%= content_for?(:title) ? yield(:title) : "Nairobi Dev School" %></title>
+	<title><%= content_for?(:title) ? yield(:title) : "Nairobi Dev School" %></title>
 
-		<%= stylesheet_link_tag    "application" %>
-    <%= csrf_meta_tags %>
-  </head>
+	<%= stylesheet_link_tag    "application" %>
+        <%= csrf_meta_tags %>
+    </head>
 
-  <body>
+    <body>
+        <div class="contain-to-grid">
+            <nav class="top-bar" data-topbar>
+                <ul class="title-area">
+                    <!-- Title Area -->
+                    <li class="name">
+                        <h1><a href="<%= root_path %>">Nairobi Dev School</a></h1>
+                    </li>
+                </ul>
 
-  <div class="fixed contain-to-grid">
-    <nav class="top-bar">
-      <ul class="title-area">
-        <!-- Title Area -->
-        <li class="name">
-          <h1><a href="<%= root_path %>">Nairobi Dev School</a></h1>
-        </li>
-      </ul>
-
-      <section class="top-bar-section">
-         <ul class="right">
-          <li><a href="<%= admin_attendee_applications_path %>">Attendee Applications</a></li>
-          <li><a href="<%= admin_sponsor_applications_path %>">Sponsor Applications</a></li>
-          <li><a href="<%= admin_mentor_applications_path %>">Mentor Applications</a></li>
-        </ul>
-      </section>
-    </nav>
-  </div>
-    <% if flash[:alert].present? %>
-      <div data-alert class="fixed alert-box alert">
-        <%= flash[:alert] %>
-        <a href="#" class="close">&times;</a>
-      </div>
-    <% end %>
-    <% if flash[:success].present? %>
-      <div data-alert class="fixed alert-box success">
-        <%= flash[:success] %>
-        <a href="#" class="close">&times;</a>
-      </div>
-    <% end %>
-    <% if flash[:notice].present? %>
-      <div data-alert class="fixed alert-box">
-        <%= flash[:notice] %>
-        <a href="#" class="close">&times;</a>
-      </div>
-    <% end %>
-    <% if flash[:error].present? %>
-      <div data-alert class="fixed alert-box alert">
-        <%= flash[:error] %>
-        <a href="#" class="close">&times;</a>
-      </div>
-    <% end %>
-      <%= yield %>
-
-
-
-    <footer>
-        <div class="row">
-            <div class="large-12 columns">
-                <p>Copyright &copy; 2013 Nairobi Developer School. Lovingly handcrafted by us in Nairobi.</p>
-              <span style="float: right;">
-                <% if signed_in? %>
-                    <%= link_to "Logout", logout_path %>
-                <% else %>
-                    <%= link_to "Login", login_path%>
-                <% end %>
-              </span>
-            </div>
+                <section class="top-bar-section">
+                    <ul class="right">
+                        <li><a href="<%= admin_attendee_applications_path %>">Attendee Applications</a></li>
+                        <li><a href="<%= admin_sponsor_applications_path %>">Sponsor Applications</a></li>
+                        <li><a href="<%= admin_mentor_applications_path %>">Mentor Applications</a></li>
+                    </ul>
+                </section>
+            </nav>
         </div>
-    </footer>
-    <%= javascript_include_tag "application" %>
-    <%= javascript_include_tag "vendor/custom.modernizr" %>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-          ga('create', 'UA-42970428-1', 'nairobidevschool.org');
-          ga('send', 'pageview');
-    </script>
+        <% if flash[:alert].present? %>
+            <div data-alert class="fixed alert-box alert">
+                <%= flash[:alert] %>
+                <a href="#" class="close">&times;</a>
+            </div>
+        <% end %>
+        <% if flash[:success].present? %>
+            <div data-alert class="fixed alert-box success">
+                <%= flash[:success] %>
+                <a href="#" class="close">&times;</a>
+            </div>
+        <% end %>
+        <% if flash[:notice].present? %>
+            <div data-alert class="fixed alert-box">
+                <%= flash[:notice] %>
+                <a href="#" class="close">&times;</a>
+            </div>
+        <% end %>
+        <% if flash[:error].present? %>
+            <div data-alert class="fixed alert-box alert">
+                <%= flash[:error] %>
+                <a href="#" class="close">&times;</a>
+            </div>
+        <% end %>
+        <div class="">
 
-  </body>
+        <section id="wrap" role="document">
+            <% if flash[:alert].present? %>
+                <div data-alert class="fixed alert-box alert">
+                    <%= flash[:alert] %>
+                    <a href="#" class="close">&times;</a>
+                </div>
+            <% end %>
+            <% if flash[:success].present? %>
+                <div data-alert class="fixed alert-box success">
+                    <%= flash[:success] %>
+                    <a href="#" class="close">&times;</a>
+                </div>
+            <% end %>
+            <% if flash[:notice].present? %>
+                <div data-alert class="fixed alert-box">
+                    <%= flash[:notice] %>
+                    <a href="#" class="close">&times;</a>
+                </div>
+            <% end %>
+            <% if flash[:error].present? %>
+                <div data-alert class="fixed alert-box alert">
+                    <%= flash[:error] %>
+                    <a href="#" class="close">&times;</a>
+                </div>
+            <% end %>
+
+            <%= yield %>
+        </section>
+
+        <footer>
+            <div class="row">
+                <div class="large-12 columns">
+                    <p>Copyright &copy; 2013 Nairobi Developer School. Lovingly handcrafted by us in Nairobi.</p>
+                    <span style="float: right;">
+                        <% if signed_in? %>
+                            <%= link_to "Logout", logout_path %>
+                        <% else %>
+                            <%= link_to "Login", login_path%>
+                        <% end %>
+                    </span>
+                </div>
+            </div>
+        </footer>
+        <%= javascript_include_tag "application" %>
+        <%= javascript_include_tag "vendor/custom.modernizr" %>
+        <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+         ga('create', 'UA-42970428-1', 'nairobidevschool.org');
+         ga('send', 'pageview');
+        </script>
+
+    </body>
 </html>
-
