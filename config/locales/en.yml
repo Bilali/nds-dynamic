@@ -79,11 +79,14 @@ en:
 
       apply:
         title: What it means to be a student
-        content: As a student it means putting in the hours to learn from the
-                 best, grokking the terminal, squeezing up all creative juices
-                 you have. Every day, you wake up to face a new challenge with
-                 new tools that we will equip you with. By studying top notch
-                 web skills, you position yourself to become rockstar web
-                 startup founders, awesome software development apprentices and
-                 rockstar beginners
+        content1: "As a student it means putting in the hours to learn from the
+                   best, grokking the terminal, squeezing up all creative juices
+                   you have. Every day, you wake up to face a new challenge with
+                   new tools that we will equip you with. By studying top notch
+                   web skills, you position yourself to become rockstar web
+                   startup founders, awesome software development apprentices and
+                   rockstar beginners"
+
+        content2: "Nairobi Dev School's goal is to empower local Kenyans to learn
+                  to program and build their dreams. Come, join us!"
         button: Apply to Attend
