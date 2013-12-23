@@ -12,6 +12,4 @@ class SponsorApplication < Application
                       :postcode]
 
   validates(*REQUIRED_ATTRS, :presence => true)
-
-  resourcify
 end
