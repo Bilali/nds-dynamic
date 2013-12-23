@@ -5,6 +5,10 @@ en:
       success: Thanks for applying! Please check your email.
       failure: Please correct the fields below.
 
+  student_mailer:
+    application_confirmation:
+      subject: Thank you for registering.
+
   home:
     about_us:
       hero:
