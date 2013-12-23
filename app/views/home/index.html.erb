@@ -1,79 +1,81 @@
 <section class="home-content home-hero">
-  <div class="row">
-    <div class="large-12 columns">
-      <h1 style="font-face: 'Roboto', sans-serif;"><%= t('.hero.title') %></h1>
+    <div class="row">
+        <div class="large-12 columns">
+            <h1 style="font-face: 'Roboto', sans-serif;"><%= t('.hero.title') %></h1>
+        </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="large-8 columns">
-      <p class="paragraph"><%= t('.hero.content') %></p>
-    </div>
-  </div>
-</section>
-
-<section class="home-content">
-
-	<div class="row">
-		<div class="large-12 columns">
-			<h1 class="heading"><%= t('.apply.title') %></h1>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="large-12 columns">
-			<p class="paragraph"><%= t('.apply.content') %></p>
-		</div>
-	</div>
-
-  <div class="row">
-    <div class="large-12 columns">
-      <a href="<%= new_attendee_application_path  %>" class="button expand">
-        <%= t('.apply.button') %>
-      </a>
-    </div>
+    <div class="row">
+        <div class="large-8 columns">
+            <p class="paragraph"><%= t('.hero.content') %></p>
+        </div>
     </div>
 </section>
 
 <section class="home-content">
-	<div class="row">
-		<div class="large-12 columns">
-			<h1 class="heading">
+
+    <div class="row">
+	<div class="large-12 columns">
+	    <h1 class="heading"><%= t('.apply.title') %></h1>
+	</div>
+    </div>
+
+    <div class="row">
+	<div class="large-12 columns">
+	    <p class="paragraph"><%= t('.apply.content') %></p>
+	</div>
+    </div>
+
+    <div class="row">
+        <div class="large-12 columns">
+            <a href="<%= new_attendee_application_path  %>" class="button expand">
+                <%= t('.apply.button') %>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="home-content">
+    <div class="row">
+	<div class="large-12 columns">
+	    <h1 class="heading">
                 <%= t('.get_involved.title') %>
             </h1>
-		</div>
 	</div>
+    </div>
 
-	<div class="row">
-		<div class="large-6 columns">
-			<p class="paragraph">
+    <div class="row">
+	<div class="large-6 columns">
+	    <p class="paragraph">
                 <%= t('.get_involved.content.join_us') %>
-       </p>
-       <p class="paragraph">
+            </p>
+            <p class="paragraph">
                 <%= t('.get_involved.content.sponsor_us') %>
-       </p>
-       <p class="paragraph">
+            </p>
+            <p class="paragraph">
                 <%= t('.get_involved.content.mentor_us') %>
-       </p>
-		</div>
-		<div class="large-6 columns">
-			<img src="http://images.indiegogo.com/medias/938725/pictures/full/20130719185506-2013-07-18_12.51.05.jpg?1374285308" alt="" />
-			<!-- <span class="paragraph"> -->
+            </p>
+	</div>
+	<div class="large-6 columns">
+	    <img src="http://images.indiegogo.com/medias/938725/pictures/full/20130719185506-2013-07-18_12.51.05.jpg?1374285308" alt="" />
+	    <!-- <span class="paragraph"> -->
             <blockquote>
-			  <%= t('.get_involved.content.ilias') %>
+		<%= t('.get_involved.content.ilias') %>
             </blockquote>
-			<!-- </span> -->
-		</div>
+	    <!-- </span> -->
 	</div>
+    </div>
 
-	<div class="row actionable-buttons">
-		<div class="large-5 columns">
-			<a class="button" href="<%= new_mentor_application_path %>"><%= t('.get_involved.become_a_mentor') %></a>
-		</div>
-        <div class="large-4 columns">
-            <script src="<%= asset_path('paypal-button.min.js') + '?merchant=5L4SHMKQHZY9Y' %>" data-button="donate" data-name="Nairobi Dev School"></script>
-        </div>
-		<div class="large-3 columns">
-			<a class="button" href="<%= new_sponsor_application_path %>"><%= t('.get_involved.become_a_sponsor') %></a>
-		</div>
+    <div class="row actionable-buttons">
+	<div class="large-5 columns">
+	    <a class="button" href="<%= new_mentor_application_path %>"><%= t('.get_involved.become_a_mentor') %></a>
 	</div>
+        <div class="large-4 columns">
+        <!--
+        <script src="<%= asset_path('paypal-button.min.js') + '?merchant=5L4SHMKQHZY9Y' %>" data-button="donate" data-name="Nairobi Dev School"></script>
+        -->
+        </div>
+	<div class="large-3 columns">
+	    <a class="button" href="<%= new_sponsor_application_path %>"><%= t('.get_involved.become_a_sponsor') %></a>
+	</div>
+    </div>
 </section>

@@ -16,5 +16,7 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).foundation();
-$('.alert-box').delay(3000).slideUp();
+$(function() {
+    $(document).foundation();
+    $('.alert-box').delay(3000).slideUp();
+})

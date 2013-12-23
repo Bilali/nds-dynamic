@@ -16,7 +16,6 @@ describe "applying to be a attendee" do
     fill_in "What would you like to do after NDS?", with: "Save the world"
     check("I can afford the $636 batch fee")
     fill_in "If you can't afford the batch fee please tell us why you need help!", with: "I need help!"
-
     click_on "Apply"
 
     expect(page).to have_content("Thanks for applying! Please check your email.")
