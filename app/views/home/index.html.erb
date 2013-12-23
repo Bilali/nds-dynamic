@@ -38,6 +38,7 @@
         </div>
     </div>
 </section>
+
 <section class="home-content">
     <div class="row">
 	<div class="large-12 columns">
@@ -71,16 +72,12 @@
     </div>
 
     <div class="row actionable-buttons">
-	<div class="large-5 columns">
-	    <a class="button" href="<%= new_mentor_application_path %>"><%= t('.get_involved.become_a_mentor') %></a>
+        <hr>
+	<div class="large-6 columns">
+	    <a class="button expand" href="<%= new_mentor_application_path %>"><%= t('.get_involved.become_a_mentor') %></a>
 	</div>
-        <div class="large-4 columns">
-        <!--
-        <script src="<%= asset_path('paypal-button.min.js') + '?merchant=5L4SHMKQHZY9Y' %>" data-button="donate" data-name="Nairobi Dev School"></script>
-        -->
-        </div>
-	<div class="large-3 columns">
-	    <a class="button" href="<%= new_sponsor_application_path %>"><%= t('.get_involved.become_a_sponsor') %></a>
+	<div class="large-6 columns">
+	    <a class="button expand" href="<%= new_sponsor_application_path %>"><%= t('.get_involved.become_a_sponsor') %></a>
 	</div>
     </div>
 </section>
