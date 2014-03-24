@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.1.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '4.0.4'
+gem 'sprockets', '2.11.0'
 gem 'unicorn'
 
 group :development do
@@ -29,16 +30,16 @@ group :production do
   gem 'rails_12factor'
 end
 
-gem 'simple_form', '~> 3.0.0.rc'
-gem 'sass-rails', '~> 4.0.0.rc2'
-gem 'uglifier', '>= 1.3.0'
+gem 'simple_form'
+gem 'sass-rails'
+gem 'uglifier'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'jbuilder', '~> 1.2'
+gem 'jbuilder'
 gem 'devise'
 gem 'factory_girl_rails'
 gem 'cancan'
-gem 'rolify', "~> 3.2.0"
+gem 'rolify'
 gem 'newrelic_rpm'
 gem 'foundation-rails'
 gem 'rails_admin'
