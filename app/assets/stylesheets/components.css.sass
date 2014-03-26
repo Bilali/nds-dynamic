@@ -4,6 +4,96 @@ html, body
 table
   width: 100%
 
+.header-panel
+  padding: 0
+
+#hero-title
+  height: 300px
+  background-color: #79C199
+
+  h1, h2
+    padding: none
+    color: white
+
+  h1
+    margin-left: 30px
+    margin-top: 15px
+    font-weight: bolder
+    font-size: 82px
+
+    span
+      margin-left: -20px
+    span:first-child
+      margin-left: 0
+
+    .purple
+      color: #848ED8
+    .yellow
+      color: #DAC75B
+    .teal
+      color: #3CDECC
+
+  h2
+    margin-top: -30px
+    border-top: 1px solid white
+    margin-left: 34px
+    font-size: 18px
+    width: 145px
+
+  #lines
+    margin-top: 100px
+    hr
+      border: none
+      margin: 0
+      &#purple-line
+        height: 10px
+        margin-bottom: 4px
+        background-color: #848ED8
+
+      &#yellow-line
+        height: 3px
+        margin-bottom: 7px
+        background-color: #DAC75B
+
+      &#teal-line
+        height: 13px
+        background-color: #3CDECC
+
+
+nav
+  z-index: 1
+  a
+    color: white
+    text-decoration: none
+    &:hover
+      color: white
+      text-decoration: underline
+
+  ul li
+    list-style: none
+    padding: 10px
+    border-right: 1px solid white
+
+#nav-top
+  height: 300px
+  background-color: #63B789
+
+  nav
+    position: fixed
+    top: 35px
+    width: 300px
+
+    text-align: right
+    font-size: larger
+
+#nav-bottom
+  background-color: #94CBAD
+  nav
+    position: fixed
+    top: 300px
+    width: 300px
+
+
 .callout_panel
   @include panel(#FFD75D)
   padding: 50px
@@ -24,7 +114,6 @@ table
   h2
     width: 100%
     text-align: center
-
 
 footer
   border-top: 6px solid rgb(251, 199, 37)

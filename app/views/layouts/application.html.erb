@@ -27,52 +27,78 @@
 
     <body>
 
-        <nav class="top-bar" data-topbar>
-            <ul class="title-area">
-                <li class="name">
-                    <h1 class="heading"><a href="<%= root_path %>">Nairobi Dev School</a></h1>
-                </li>
-                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-            </ul>
-
-            <section class="top-bar-section">
-                <ul class="right">
-                    <li><%= link_to "About Us", about_path %></li>
-                    <li><%= link_to "Programs", programs_path %></li>
-                    <li><%= link_to "Learning Forum", "http://discuss.nairobidevschool.org" %></li>
-                    <li class="divider"></li>
-                    <li><a href="<%= new_attendee_application_path  %>">Apply to Attend</a></li>
-                </ul>
-            </section>
-        </nav>
-
         <section id="wrap" role="document">
-            <% if flash[:alert].present? %>
-                <div data-alert class="fixed alert-box alert">
-                    <%= flash[:alert] %>
-                    <a href="#" class="close">&times;</a>
-                </div>
-            <% end %>
-            <% if flash[:success].present? %>
-                <div data-alert class="fixed alert-box success">
-                    <%= flash[:success] %>
-                    <a href="#" class="close">&times;</a>
-                </div>
-            <% end %>
-            <% if flash[:notice].present? %>
-                <div data-alert class="fixed alert-box">
-                    <%= flash[:notice] %>
-                    <a href="#" class="close">&times;</a>
-                </div>
-            <% end %>
-            <% if flash[:error].present? %>
-                <div data-alert class="fixed alert-box alert">
-                    <%= flash[:error] %>
-                    <a href="#" class="close">&times;</a>
-                </div>
-            <% end %>
+            <div class="row">
+                <div id="hero-title" class="large-8 columns header-panel">
+                    <h1>
+                        <span class="purple">n</span>
+                        <span class="yellow">d</span>
+                        <span class="teal">s</span>
+                    </h1>
+                    <h2>nairobi dev school</h2>
 
-            <%= yield %>
+                    <div id="lines">
+                        <hr id='purple-line'>
+                        <hr id='yellow-line'>
+                        <hr id='teal-line'>
+                    </div>
+                </div>
+
+                <div class="large-4 columns header-panel">
+                    <div id="nav-top">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <%= link_to "About", about_path %>
+                                </li>
+                                <li>
+                                    <%= link_to "Programs", programs_path %>
+                                </li>
+                                <li>
+                                    <%= link_to "Learning Forum", "//discuss.nairobidevschool.org"%>
+                                </li>
+                                <li>
+                                    <%= link_to "Apply", new_attendee_application_path %>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" data-equalizer>
+                <div id="content" class="large-8 columns" data-equalizer-watch>
+                    <% if flash[:alert].present? %>
+                        <div data-alert class="fixed alert-box alert">
+                            <%= flash[:alert] %>
+                            <a href="#" class="close">&times;</a>
+                        </div>
+                    <% end %>
+                    <% if flash[:success].present? %>
+                        <div data-alert class="fixed alert-box success">
+                            <%= flash[:success] %>
+                            <a href="#" class="close">&times;</a>
+                        </div>
+                    <% end %>
+                    <% if flash[:notice].present? %>
+                        <div data-alert class="fixed alert-box">
+                            <%= flash[:notice] %>
+                            <a href="#" class="close">&times;</a>
+                        </div>
+                    <% end %>
+                    <% if flash[:error].present? %>
+                        <div data-alert class="fixed alert-box alert">
+                            <%= flash[:error] %>
+                            <a href="#" class="close">&times;</a>
+                        </div>
+                    <% end %>
+
+                    <%= yield %>
+                </div>
+
+                <div id="nav-bottom" class="large-4 columns header-panel" data-equalizer-watch>
+                </div>
+            </div>
         </section>
 
         <footer id="sticky_footer">

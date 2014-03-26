@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "applying to be a sponsor" do
-  it "allows guest to apply to be a sponsor" do
+  xit "allows guest to apply to be a sponsor" do
     visit "/"
 
     click_on "Become a Sponsor"
