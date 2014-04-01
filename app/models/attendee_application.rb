@@ -5,5 +5,4 @@ class AttendeeApplication < Application
                       :reason_for_sponsorship]
 
   validates(*REQUIRED_ATTRS, :presence => true)
-
 end

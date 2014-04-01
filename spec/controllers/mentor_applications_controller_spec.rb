@@ -6,14 +6,14 @@ describe MentorApplicationsController do
   let(:company) { Faker::Name.name }
 
   describe "post #create" do
-    let(:valid_params) do 
+    let(:valid_params) do
       {
-        :name => name, 
-        :company => company, 
+        :name => name,
+        :company => company,
         :email => email,
-      } 
+      }
     end
-
+    
     let(:good_request) do
       post :create, :mentor_application => valid_params
     end
