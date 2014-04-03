@@ -30,8 +30,7 @@ class BaseApplicationsController < ApplicationController
   end
 
   def application_params
-    params.require(model_name)
-    .permit(*attributes)
+    params.require(model_name).permit(*attributes)
   end
 
   def attributes

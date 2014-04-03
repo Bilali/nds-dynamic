@@ -13,7 +13,7 @@ describe MentorApplicationsController do
         :email => email,
       }
     end
-    
+
     let(:good_request) do
       post :create, :mentor_application => valid_params
     end

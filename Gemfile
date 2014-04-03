@@ -12,10 +12,10 @@ group :development do
   gem 'capistrano-unicorn', :require => false
 end
 
-
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'pry-debugger'
+  gem 'pry-doc'
   gem 'rspec-rails'
   gem 'sqlite3'
   gem 'capybara'
@@ -23,6 +23,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'launchy'
   gem 'guard-rspec'
+  gem 'spring-commands-rspec'
 end
 
 group :production do
