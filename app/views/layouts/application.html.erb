@@ -14,12 +14,8 @@
 
 	<title><%= content_for?(:title) ? yield(:title) : "Nairobi Dev School" %></title>
 
-	<%= stylesheet_link_tag    "application",
-        "http://fonts.googleapis.com/css?family=Raleway",
-        "http://fonts.googleapis.com/css?family=Roboto",
-        "http://fonts.googleapis.com/css?family=Oxygen",
-        "http://fonts.googleapis.com/css?family=Port+Lligat+Slab"
-        %>
+	<%= stylesheet_link_tag    "application" %>
+        <link href='//fonts.googleapis.com/css?family=Exo+2:400,100' rel='stylesheet' type='text/css'>
         <%= csrf_meta_tags %>
         <%= javascript_include_tag "vendor/modernizr" %>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,50 +24,38 @@
     <body>
 
         <section id="wrap" role="document">
-            <div class="row">
-                <div id="hero-title" class="large-8 columns header-panel">
-                    <h1>
-                        <span class="purple">n</span>
-                        <span class="yellow">d</span>
-                        <span class="teal">s</span>
-                    </h1>
-                    <h2>nairobi dev school</h2>
 
-                    <div id="lines">
-                        <hr id='purple-line'>
-                        <hr id='yellow-line'>
-                        <hr id='teal-line'>
+            <div id="hero-title">
+                <div class="row">
+                    <div class="large-8 columns header-panel">
+                        <h1>
+                            <span class="purple">n</span>
+                            <span class="yellow">d</span>
+                            <span class="teal">s</span>
+                        </h1>
+                        <h2>nairobi dev school</h2>
+                        <div id="lines">
+                            <hr id='purple-line'>
+                            <hr id='yellow-line'>
+                            <hr id='teal-line'>
+                        </div>
                     </div>
-                </div>
-
-                <div class="large-4 columns header-panel">
-                    <div id="nav-top">
-                        <nav>
-                            <ul>
-                                <li>
-                                    <%= link_to "About", about_path %>
-                                </li>
-                                <li>
-                                    <%= link_to "Programs", programs_path %>
-                                </li>
-                                <li>
-                                    <%= link_to "Learning Forum", "//discuss.nairobidevschool.org"%>
-                                </li>
-                                <li>
-                                    <%= link_to "Apply", new_attendee_application_path %>
-                                </li>
-                                <li>
-                                    <%= link_to "Mentor", new_mentor_application_path %>
-                                </li>
-                                <li>
-                                    <%= link_to "Sponsor", new_sponsor_application_path %>
-                                </li>
-                            </ul>
-                        </nav>
+                    <div class="large-4 columns header-panel">
+                        <div id="nav-top">
+                            <nav>
+                                <ul>
+                                    <li> <%= link_to "About", about_path %> </li>
+                                    <li> <%= link_to "Programs", programs_path %> </li>
+                                    <li> <%= link_to "Apply", new_attendee_application_path %> </li>
+                                    <li> <%= link_to "Mentor", new_mentor_application_path %> </li>
+                                    <li> <%= link_to "Sponsor", new_sponsor_application_path %> </li>
+                                    <li> <%= link_to "Learning Forum", '//discuss.nairobidevschool.org' %> </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
-
             <div class="row" data-equalizer>
                 <div id="content" class="large-8 columns" data-equalizer-watch>
                     <% if flash[:alert].present? %>
@@ -111,13 +95,6 @@
             <div class="row">
                 <div class="large-12 columns" id="wrap">
                     <p>Copyright &copy; 2013 Nairobi Developer School. Lovingly handcrafted by us in Nairobi.</p>
-                    <span style="float: right;">
-                        <% if signed_in? %>
-                            <%= link_to "Logout", logout_path %>
-                        <% else %>
-                            <%= link_to "Login", login_path%>
-                        <% end %>
-                    </span>
                 </div>
             </div>
         </footer>
