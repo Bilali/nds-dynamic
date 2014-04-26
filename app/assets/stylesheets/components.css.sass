@@ -47,7 +47,6 @@ img
   #lines
     margin-top: 100px
     margin-left: -1000px
-    margin-right: -10px
 
     hr
       border: none
@@ -82,17 +81,23 @@ nav
     border-right: 1px solid white
 
 #nav-top
-  height: 300px
   background-color: #63B789
-  margin-rigth: -100px
 
-  nav
-    position: fixed
-    top: 35px
-    width: 300px
+  @media screen and (max-width: 640px)
+    nav a
+      display: inline-block
+      width: 100%
+      height: 100%
 
-    text-align: right
-    font-size: larger
+  @media screen and (min-width: 640px)
+    height: 300px
+    nav
+      position: fixed
+      top: 35px
+      width: 200px
+
+      text-align: right
+      font-size: larger
 
 #nav-bottom
   background-color: #63B789
