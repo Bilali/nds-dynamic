@@ -22,18 +22,18 @@
     </head>
 
     <body>
-
         <section id="wrap" role="document">
-
             <div id="hero-title">
                 <div class="row">
                     <div class="large-8 columns header-panel">
-                        <h1>
-                            <span class="purple">n</span>
-                            <span class="yellow">d</span>
-                            <span class="teal">s</span>
-                        </h1>
-                        <h2>nairobi dev school</h2>
+                        <a href='/'>
+                            <h1>
+                                <span class="purple">n</span>
+                                <span class="yellow">d</span>
+                                <span class="teal">s</span>
+                            </h1>
+                            <h2>nairobi dev school</h2>
+                        </a>
                         <div id="lines">
                             <hr id='purple-line'>
                             <hr id='yellow-line'>
@@ -44,6 +44,7 @@
                         <div id="nav-top">
                             <nav>
                                 <ul>
+                                    <li> <%= link_to "Home", root_path %> </li>
                                     <li> <%= link_to "About", about_path %> </li>
                                     <li> <%= link_to "Programs", programs_path %> </li>
                                     <li> <%= link_to "Apply", new_attendee_application_path %> </li>
