@@ -1,12 +1,6 @@
-worker_processes 3
+worker_processes Integer(ENV["WEB_CONCURRENCY"] || 3)
 timeout 15
 preload_app true
-
-listen "/tmp/nds.unicorn.sock"
-
-pid "#{app_dir}/tmp/pids/unicorn.pid"
-stderr_path "#{app_dir}/log/unicorn.stderr.log"
-stdout_path "#{app_dir}/log/unicorn.stdout.log"
 
 before_fork do |server, worker|
   Signal.trap 'TERM' do
