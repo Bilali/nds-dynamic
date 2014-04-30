@@ -1,8 +1,4 @@
-app_dir = "/home/deploy/nds/current"
-
 worker_processes 3
-working_directory app_dir
-
 timeout 15
 preload_app true
 
@@ -20,7 +16,7 @@ before_fork do |server, worker|
 
   defined?(ActiveRecord::Base) and
     ActiveRecord::Base.connection.disconnect!
-end 
+end
 
 after_fork do |server, worker|
   Signal.trap 'TERM' do
