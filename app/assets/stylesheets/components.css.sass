@@ -2,17 +2,49 @@ html, body
   background: url(image_path('cream_pixels.png'))
   font-family: 'Exo 2', 'sans-serif'
 
+  h1
+    font-family: 'Exo 2'
+    font-weight: 200
+    color: #191919
+    margin-top: 30px
+
+  h3
+    font-family: 'Exo 2'
+    font-weight: 100
+    color: #191919
+    margin-top: 15px
+
+  p
+    font-family: 'Exo 2'
+    font-weight: 100
+    color: #191919
+    margin-top: 15px
+
+  blockquote
+    font-family: 'Exo 2'
+    font-weight: 100
+
+  .show-for-small-only 
+    margin-top: -15px
+
+  .show-for-large-up 
+    margin-top: -15px
+
+  #logo
+    font-family: helvetica
+
 table
   width: 100%
 
 img
   margin: 0 auto
+  margin-top: 15px
 
 .header-panel
   padding: 0
 
 #hero-title
-  height: 300px
+  height: 315px
   background-color: #79C199
 
   h1, h2
@@ -43,9 +75,11 @@ img
     margin-left: 34px
     font-size: 18px
     width: 148px
+    font-weight: 100
+    letter-spacing: 1px
 
   #lines
-    margin-top: 100px
+    margin-top: 115px
     margin-left: -1000px
 
     hr
@@ -71,13 +105,17 @@ nav
   a
     color: white
     text-decoration: none
+    opacity: .8
+    font-weight: 100
     &:hover
       color: white
-      text-decoration: underline
+      opacity: 1
+      font-weight: 200
 
   ul li
     list-style: none
     padding: 5px
+    padding-right: 15px
     border-right: 1px solid white
 
 #nav-top
@@ -90,7 +128,7 @@ nav
       height: 100%
 
   @media screen and (min-width: 640px)
-    height: 300px
+    height: 315px
     nav
       position: fixed
       top: 35px
@@ -101,6 +139,7 @@ nav
 
 #nav-bottom
   background-color: #63B789
+  opacity: .5
   nav
     position: fixed
     top: 300px
@@ -112,13 +151,10 @@ nav
   padding: 50px
   background-color: rgba(255, 215, 93, 0.9)
   h2
-    color: #fff
+    color: #191919
 
 .call_to_action
   @extend .button
-
-#content
-  background-color: #FCFCFC
 
 .content-title
   @extend .large-12
@@ -127,7 +163,8 @@ nav
     text-align: center
 
 footer
-  border-top: 6px solid rgb(251, 199, 37)
-  background-color: rgb(242, 242, 242)
-  padding-top: 20px
-  color: rgb(119, 119, 119)
+  border-top: 1px solid #BABABA
+  padding-top: 8px
+
+#paypal 
+  margin: 30px
