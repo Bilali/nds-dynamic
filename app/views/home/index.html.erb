@@ -1,15 +1,16 @@
 <section>
     <div class="row">
-	<div class="medium-12 columns">
-	    <h1 class="heading"><%= t('.apply.title') %></h1>
-	</div>
+        <div class="medium-12 columns">
+            <h1 class="heading"><%= t('.apply.title') %></h1>
+        </div>
     </div>
 
     <div class="row">
-	<div class="medium-12 columns">
-	    <p class="paragraph"><%= t('.apply.content1') %></p>
-	    <p class="paragraph"><%= t('.apply.content2') %></p>
-	</div>
+        <div class="medium-12 columns">
+            <p class="paragraph"><%= t('.apply.content1') %></p>
+
+            <p class="paragraph"><%= t('.apply.content2') %></p>
+        </div>
         <div class="video-container medium-12 columns">
             <iframe width="100%" height="320" src="//www.youtube.com/embed/bMXnR7gxbQ0" frameborder="0" allowfullscreen></iframe>
         </div>
@@ -18,41 +19,44 @@
 
 <section>
     <div class="row">
-	<div class="medium-12 columns">
-	    <h1 class="heading">
+        <div class="medium-12 columns">
+            <h1 class="heading">
                 <%= t('.get_involved.title') %>
             </h1>
-	</div>
+            <div id="paypal">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="25P9FHFFZNXR8">
+                    <input type="image" style="display: block; margin: auto;" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+            </div>
+        </div>
     </div>
 
     <div class="row">
-	<div class="medium-12 columns">
-	    <p class="paragraph">
+        <div class="medium-12 columns">
+            <p class="paragraph">
                 <%= t('.get_involved.content.join_us') %>
             </p>
+
             <p class="paragraph">
                 <%= t('.get_involved.content.sponsor_us') %>
             </p>
+
             <p class="paragraph">
                 <%= t('.get_involved.content.mentor_us') %>
             </p>
-	</div>
-	<div class="medium-12 columns">
-	    <img src="http://images.indiegogo.com/medias/938725/pictures/full/20130719185506-2013-07-18_12.51.05.jpg?1374285308" alt="" />
-	    <!-- <span class="paragraph"> -->
+        </div>
+        <div class="medium-12 columns">
+            <img src="http://images.indiegogo.com/medias/938725/pictures/full/20130719185506-2013-07-18_12.51.05.jpg?1374285308" alt=""/>
+            <!-- <span class="paragraph"> -->
             <blockquote>
-		<%= t('.get_involved.content.ilias') %>
+                <%= t('.get_involved.content.ilias') %>
             </blockquote>
-	    <!-- </span> -->
-	</div>
-    <div id="paypal">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="25P9FHFFZNXR8">
-            <input type="image" style="display: block; margin: auto;" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-        </form>
-    </div>
+            <!-- </span> -->
+        </div>
+
     </div>
 
 </section>
